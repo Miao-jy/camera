@@ -3,9 +3,9 @@ package jp.co.cyberagent.android.gpuimage.sample.utils
 import android.graphics.ImageFormat
 import android.media.Image
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 
-@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 fun Image.generateNV21Data(): ByteArray {
     val crop = cropRect
     val format = format
